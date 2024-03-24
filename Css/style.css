@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "EnglishFont";
+  src: url(/assets/font/FontsFree-Net-Circular-Std-Bold.ttf);
+}
+@font-face {
+  font-family: "IranianFont";
+  src: url(/assets/font/teqh_iransansweb.ttf);
+}
+.navbar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.071);
+  height: 70px;
+  position: fixed;
+  z-index: 95;
+}
+.RightBar {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+#Logo-Header {
+  width: 150px;
+  margin-right: 20px;
+}
+.LeftBar{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+#hr-custom{
+  width: 30px;
+  height: 5px;
+  transform: rotate(90deg);
+  color: rgb(41, 41, 41);
+}
+
+.LeftBar i:not(.bx-menu){
+  color: #3a4ca8;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+}
+.LeftBar p{
+  margin-top: 16px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: "IranianFont" ;
+  font-weight: 500;
+  color: rgb(56, 56, 56);
+  cursor: pointer;
+}
+.bx-menu{
+  font-size: 35px;
+  margin-right: 10px;
+  color: #3a4ca8;
+  cursor: pointer;
+}
+
+
+/* Overlay Page */
+
+.overlay-page{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 97;
+  display: none;
+  transition: all 0.7s;
+}
+
+.overlay-page.active{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 97;
+  display: block;
+  background-color: #000000ba;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  transition: all 0.7s;
+}
+
+/* Navbar Mobile */
+
+.navbar-Mobile{
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 100%;
+  position: absolute; 
+  top: 0px;
+  right: -200%;
+  transition: all 0.5s;
+  z-index: 98;
+}
+.navbar-Mobile.active{
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 100%;
+  position: absolute; 
+  top: 0px;
+  right: 0px;
+  transition: all 0.5s;
+  z-index: 98;
+}
+.bx-chevron-right{
+  font-size: 38px;
+  color: rgb(25, 25, 25);
+  margin-top: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+  margin-right: -10px;
+}
+li{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+li p{
+  font-size: 17px;
+  color: rgb(53, 53, 53);
+  font-weight: 500;
+  margin-right: 10px;
+}
+li i{
+  font-size: 24px;
+  color: rgb(102, 0, 255);
+  margin-top: 2px;
+}
+li:first-child{
+  margin-top: 12%;
+}
+#logonavbarmobile{
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+.logonavbarmobile{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Query Media For Responsive */
+
+/* Mobile */
+
+@media (max-width : 767px){
+ .navbar {
+  direction: ltr;
+ }
+ .RightBar{
+  margin-left: 15px;
+ }
+ .LeftBar p , .LeftBar i:not(.bx-menu) , #hr-custom{
+  display: none;
+ }
+ #Logo-Header{
+  width: 120px;
+ }
+ .bxmenu{
+  display: block;
+ }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width : 1023px){
+ .LeftBar p {
+  display: none;
+ }
+ .bxmenu{
+  display: none;
+ }
+}
+
+/* LapTop & Desktop */
+
+@media (min-width : 1024px) {
+  .bxmenu{
+    display: none;
+   }
+}
