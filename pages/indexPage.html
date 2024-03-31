@@ -13,6 +13,10 @@
 
     <link rel="shortcut icon" href="/public/logozoodex.png" />
 
+    <!-- FontAweSome Icon -->  
+
+    <script src="https://kit.fontawesome.com/33543ba412.js" crossorigin="anonymous"></script>
+
     <!--  Bootstrap -->
 
     <link
@@ -43,8 +47,9 @@
 
     <div class="overlay-page "></div>
 
+    <img src="/assets/img/banner1.jpg" id="BannerTabrikYear" alt="TabrikSalJadid">
 
-    <div class="navbar">
+    <div class="navbars">
       
       <div class="RightBar">
         <img src="/public/LogoElinoHeader.svg" alt="ElinoLogoHeader" id="Logo-Header"/>
@@ -52,14 +57,24 @@
 
       <div class="LeftBar">
         
-        <i class='bx bx-search' ></i>
-        <p id="text-search">جستجو</p>
+        <div class="searchbutton">
+          <i class='bx bx-search' ></i>
+          <p id="text-search">جستجو</p>
+        </div>
+        
         <hr id="hr-custom">
+        
+        <div class="loginbutton">
         <i class='bx bx-user' ></i>
         <p id="text-user">ورود / ثبت نام</p>
+      </div>
+
         <hr id="hr-custom">
+
+        <div class="cartbutton">
         <i class='bx bx-shopping-bag' ></i>
         <p id="text-sabadkharid">سبد خرید</p>
+      </div>
 
         <div class="bxmenu">
         <i class='bx bx-menu'></i>
@@ -69,7 +84,7 @@
 
     </div>
 
-    <div class="navbar-Mobile  ">
+    <div class="navbar-Mobile">
       
       <div class="iconback">
       <i class='bx bx-chevron-right' ></i>
@@ -80,7 +95,7 @@
         <li> <i class='bx bx-store' ></i> <p>ایجاد مجموعه</p> </li>
         <li> <i class='bx bx-hard-hat' ></i> <p>ثبت نام سفیران </p> </li>
         <li> <i class='bx bx-support' ></i> <p>پشتیبانی سفارش</p> </li>
-        <li> <i class='bx bxs-phone' ></i> <p>تماس با ما </p> </li>
+        <li> <i class='bx bxs-phone' ></i> <p>تماس با ما </p> </li>  
 
       </ul>
       
@@ -88,7 +103,190 @@
       <img src="/public/LogoElinoHeader.svg" alt="LogoNavbarMobile" id="logonavbarmobile">
     </div>
 
+    </div>
+
+    <div class="BottomNavbar">
+      <ul>
+        <li class="bottomnavbarcart" > <i class="fa-solid fa-cart-shopping"></i> <p> سبد خرید </p>  </li>
+        <li class="bottomnavbarlogin"> <i class="fa-solid fa-user"></i> <p> ورود </p>  </li>
+        <li> <i class="fa-solid fa-store"></i> <p> خانه </p> </li>
+        <li class="bottomnavbarsearch"> <i class="fa-solid fa-magnifying-glass"></i> <p> جستجو </p> </li>
+        <li> <i class="fa-solid fa-newspaper"></i> <p> سفارشات </p> </li>
+      </ul>
+    </div>
+
+    <div class="searchbox">
+       
+      <i class='bx bx-x' ></i>
+      
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="نام محصول یا کالا را سرچ کنید ...">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" style="fill: #644bff;transform: msFilter"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></div>
+      </div>
+    </div>
+
+    <div class="imglogosearchbox">
+    <img src="/public/LogoElinoHeader.svg" alt="LogoSearchBox" id="LogoSearchBox">
   </div>
+
+    </div>
+
+    <div class="loginpanel">
+      <form action="post">
+        <i class="bx bx-x"></i>
+        <img src="/public/LogoElinoHeader.svg" alt="LogoPanelLogin" id="logoLoginPanel">
+         <p>ورود \ ثبت نام</p>
+         <div class="input-groups">
+          <input required="" type="text" name="text" autocomplete="off" class="inputt">
+          <label class="user-label"> شماره موبایل * </label>
+        </div>
+           <button class="button">
+          <span class="button-content">ادامه دهید</span>
+        </button>          
+      </form>
+    </div>
+
+    <div class="ProductCart">
+      <div class="rowbox">
+        <p>سفارش شما</p>
+        <div class="iconproductbox">
+        <i class='bx bx-trash-alt'></i>
+        <i class='bx bxs-chevron-left'></i>
+      </div>
+      </div>
+      <div class="bodycart">
+      <img src="/assets/img/emptycart.png" alt="emptyimgcart" id="emptycartimg">
+      <p id="textproductcart">سبد خرید شما در حال حاضر خالی است .</p>
+    </div>
+    </div>
+
+    <div class="RowFirstSection">
+      <div class="col-text">
+          <p id="textonefirstsection">سفارش انلاین <span> محصولات غذایی</span></p>
+        <p id="texttwofirstsection">سفارش انلاین غذا، میوه، نان، شیرینی و ...</p>
+        <div class="SearchCity">
+
+          <div class="searchbar">
+            <div class="searchbar-wrapper">
+                <div class="searchbar-left">
+                    <div class="search-icon-wrapper">
+                        <span class="search-icon searchbar-icon">
+                          <i class='bx bx-map'></i>
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="searchbar-center">
+                    <div class="searchbar-input-spacer"></div>
+        
+                    <input type="text" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off" title="Search" role="combobox" placeholder="شهرخود را انتخاب کنید" dis>
+                </div>
+        
+                <div class="searchbar-right">
+                  <i class='bx bx-search' ></i>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+        <img src="/assets/img/imgfood.png" alt="ImageFirstSection" id="imgfirstsection">
+    </div>
+
+    <div class="SliderTwoSection">
+      <div class="SliderTrack">
+
+        <div class="slider">
+          <img src="/assets/img/resturant.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">رستوران</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/noonvayi.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">نانوایی</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/supermarket.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">سوپرمارکت</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/fastfood.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">فست فود</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/coffeeshop.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">کافی شاپ</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/abmivevabastani.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">آبمیوه و بستنی</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/atarivakhoshkbar.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">عطاری و خشکبار</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/gooshtvamorgh.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">گوشت و مرغ</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/mivevasabzi.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">میوه و سبزیجات</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/shocolatvashirini.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">شکلات و شیرینی</p>
+        </div>
+
+        <!-- Two -->
+
+        <div class="slider">
+          <img src="/assets/img/resturant.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">رستوران</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/noonvayi.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">نانوایی</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/supermarket.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">سوپرمارکت</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/fastfood.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">فست فود</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/coffeeshop.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">کافی شاپ</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/abmivevabastani.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">آبمیوه و بستنی</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/atarivakhoshkbar.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">عطاری و خشکبار</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/gooshtvamorgh.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">گوشت و مرغ</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/mivevasabzi.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">میوه و سبزیجات</p>
+        </div>
+        <div class="slider">
+          <img src="/assets/img/shocolatvashirini.svg" alt="imgslidertwosection" id="ImgSliderTwoSection">
+          <p id="text-slider-ts">شکلات و شیرینی</p>
+        </div>
+        
+      </div>
+    </div>
 
   <!-- JavaScript -->
 
