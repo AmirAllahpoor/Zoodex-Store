@@ -7,10 +7,11 @@
   src: url(/assets/font/teqh_iransansweb.ttf);
 }
 
-/* Banner Tabrik Sal 1403 */
 body{
- height: 150vh;
+  height: auto;
 }
+/* Banner Tabrik Sal 1403 */
+
 #BannerTabrikYear{
   width: 100%;
   display: block;
@@ -21,7 +22,7 @@ body{
 /* Navbar */
 
 .navbars{
-  margin-top: 4%;
+  margin-top: 3.9%;
   width: 100%;
   background-color: white;
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.071);
@@ -292,6 +293,8 @@ body{
   width: 100%;
   cursor: pointer;
   border-radius: 3px;
+  font-family: "IranianFont";
+  font-size: 15px;
 }
 
 .search-input.active .autocom-box li{
@@ -590,9 +593,9 @@ body{
   border-radius: 5px;
   width: 93%;
   height: 470px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
+  position: relative;
+  top: 400px;
+  left: 42%;
   transform: translate(-50% , -50%);
   z-index: 50;
   overflow: hidden;
@@ -762,9 +765,9 @@ body{
 .SliderTwoSection{
   width: 100%;
   height: 30%;
-  z-index: 50;
-  position: absolute;
-  top: 95%;
+  z-index: 48;
+  position:relative;
+  top: 220px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -808,6 +811,23 @@ body{
   font-size: 13px;
   margin-top: 30px;
 }
+.SliderTwoSection::before , .SliderTwoSection::after{
+  background: linear-gradient(to right , rgba(255,2555,255,1) 0% , rgba(255,255,255,0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 150px;
+  z-index: 49;
+}
+.SliderTwoSection::before{
+  left: 0;
+  top: 0;
+}
+.SliderTwoSection::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
 
 @keyframes AnimationSliderTwoSection {
   0%{
@@ -818,6 +838,210 @@ body{
   }
 }
 
+/* Swiper Slider 1 */
+
+.swiperslide {
+  width: 95%;
+  height: 450px;
+  position: relative;
+  top: 350px;
+  overflow: hidden;
+  margin-right: 30px;
+  z-index: 47;
+}
+.swiperslide2{
+  width: 95%;
+  height: 400px;
+  position: relative;
+  top: 400px;
+  overflow: hidden;
+  margin-right: 30px;
+  z-index: 46;
+}
+.swiper-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.swiper-slide .sw-back {
+  text-align: center;
+  font-size: 18px;
+  background: #fbfbfb;
+  box-shadow: 3px 2px 8px rgba(0,0,0,.16078);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; 
+  width: 300px;
+  height: 300px;
+}
+.sw-back:hover{
+  box-shadow: 5px 5px 8px rgba(0,0,0,.16078);
+}
+.sw-back2:hover{
+  box-shadow: 5px 5px 8px rgba(0,0,0,.16078);
+}
+.swiper-slide .sw-back2 {
+  text-align: center;
+  font-size: 18px;
+  background: #fbfbfb;
+  box-shadow: 3px 2px 8px rgba(0,0,0,.16078);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; 
+  width: 300px;
+  height: 300px;
+}
+.sw-back2 .img{
+  width: 100%;
+  height: 70%;
+}
+.sw-back .img{
+  width: 100%;
+  height: 80%;
+}
+.sw-back .text{
+  width: 80%;
+  height: 27%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sw-back2 .text{
+  width: 90%;
+  height: 27%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.sw-back .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sw-back2 .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sw-back .text p:first-child{
+  font-family: "IranianFont";
+  font-size: 15px;
+  color: rgb(44, 44, 44);
+  margin-top: 15px;
+}
+.sw-back .text p{
+  font-family: "IranianFont";
+  font-size: 15px;
+  color: rgb(40, 40, 40);
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+
+}
+.swiper-slide .text  i{
+  font-family: "IranianFont";
+  font-size: 18px;
+  color:#ffb900;
+  margin-right: 7px;
+}
+.swiper p{
+  font-family: "IranianFont";
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+}
+.sw-back2 .text .text-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.sw-back2 .text .text-col p:first-child{
+  font-family: "IranianFont";
+  font-size: 15px;
+  color: rgb(40, 40, 40);
+}
+.sw-back2 .text .text-col p{
+  font-family: "IranianFont";
+  font-size: 12px;
+  color: rgb(40, 40, 40);
+}
+.sw-back2 .text p {
+  font-family: "IranianFont";
+  font-size: 16px;
+  color: rgb(40, 40, 40);
+}
+
+/* Why Zoodex? */
+
+.whyzoodex{
+  width: 95%;
+  position: relative;
+  top: 500px;
+  overflow: hidden;
+  margin-right: 30px;
+  z-index: 45;
+}
+.whyzoodex #starttext{
+  font-family: "IranianFont";
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(39, 39, 39);
+}
+.whybox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+.whybox img{
+  width: 60px;
+}
+#imgwhy{
+  width: 60px;
+  margin-top: 5px;
+}
+#textwhyone{
+  font-family: "IranianFont";
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(46, 46, 46);
+  margin-top: 30px;
+}
+#textwhytwo{
+  font-family: "IranianFont";
+  font-size: 17px;
+  text-align: center;
+  width: 80%;
+  font-weight: 500;
+  color: rgb(46, 46, 46);
+  margin-top: 30px;
+}
+.none{
+  width: 95%;
+  position: relative;
+  top: 550px;
+  overflow: hidden;
+  margin-right: 30px;
+  height: 20px;
+  z-index: 44;
+}
 /* Query Media For Responsive */
 
 /* Mobile */
@@ -885,9 +1109,11 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 60%;
   position: relative;
   top: 380px;
+  left: 50%;
+  transform: translate(-50% , -50%);
   width: 100%;
 }
 #imgfirstsection{
@@ -908,6 +1134,30 @@ body{
 }
 .searchbar{
   width: 300px;
+}
+.SliderTwoSection{
+  position: relative;
+  top: 230px;
+}
+.whybox img{
+  width: 40px;
+}
+#imgwhy{
+  width: 40px;
+}
+#textwhyone{
+  font-size: 17px;
+}
+.whyzoodex{
+  width: 100%;
+  margin-right: 0px;
+}
+#starttext{
+  margin-right: 20px;
+}
+#textwhytwo{
+  font-size: 12px;
+  margin-top: 10px;
 }
 }
 
@@ -931,9 +1181,11 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 52%;
   position: relative;
   top: 380px;
+  left: 50%;
+  transform: translate(-50% , -50%);
   width: 100%;
 }
 #imgfirstsection{
@@ -949,6 +1201,10 @@ body{
 .searchbar{
   width: 300px;
 }
+.SliderTwoSection{
+  position: relative;
+  top: 140px;
+}
 }
 /* LapTop & Desktop */
 
@@ -956,4 +1212,21 @@ body{
   .bxmenu{
     display: none;
    }
+}
+
+/* responsive slider two section */
+
+@media (min-width : 1025px ) and (max-width : 1160px){
+  .SliderTwoSection{
+    position: relative;
+    top: 80px;
+  }
+}
+
+@media (max-width : 350px){
+  .RowFirstSection{
+    height: 80%;
+    position: relative;
+    top: 300px;
+  }
 }

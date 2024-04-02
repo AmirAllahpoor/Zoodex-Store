@@ -172,3 +172,12 @@ const CloseProductCart = () => {
 iconopenproduct.addEventListener('click' , OpenProductCart)
 iconopenproductbottom.addEventListener('click' , OpenProductCart)
 iconbackproduct.addEventListener('click' , CloseProductCart)
+
+
+//  Swiper Js Confing
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 38,
+    freeMode: true,
+  });
