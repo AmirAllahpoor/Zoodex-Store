@@ -1,10 +1,10 @@
 @font-face {
   font-family: "EnglishFont";
-  src: url(/assets/font/FontsFree-Net-Circular-Std-Bold.ttf);
+  src: url(../font/FontsFree-Net-Circular-Std-Bold.ttf);
 }
 @font-face {
   font-family: "IranianFont";
-  src: url(/assets/font/teqh_iransansweb.ttf);
+  src: url(../font/teqh_iransansweb.ttf);
 }
 
 body{
